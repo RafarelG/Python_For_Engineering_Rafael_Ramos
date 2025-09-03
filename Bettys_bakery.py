@@ -13,4 +13,4 @@ cookies = recipes[2]
 print(cookies)
 
 grocery_list = 2 *cupcakes + cookies
-print(grocery_list) 
+print(grocery_list) # 2 batches of cupcakes and 1 batch of cookies
