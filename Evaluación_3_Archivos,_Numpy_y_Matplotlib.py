@@ -1,3 +1,10 @@
+#Evaluación 3 Python aplicado a la Ingeniería 202520 Docente: Miguel Ortiz
+
+#Estudiante: Rafael Gustavo Ramos Noriega
+
+#email: rafael.ramosn@upb.edu.co
+
+#Fecha: 9/10/2025
 import numpy as np
 import matplotlib.pyplot as plt
 
