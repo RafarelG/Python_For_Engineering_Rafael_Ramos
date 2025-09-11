@@ -1,0 +1,23 @@
+from matplotlib import pyplot as plt
+import numpy as np
+
+
+f = 60
+T = 1 / f
+t = np.linspace(0, 2 * T, 80)
+Va = 120 * np.sqrt(2)
+phi_v = 0
+v = Va * np.sin(2 * np.pi * f * t + phi_v)
+R = 10
+Ia = Va / R
+phi_i  = 90 * np.pi / 360
+i =  Ia * np.sin(2 * np.pi * f * t + phi_i)
+
+fig, ax = plt.subplots()
+ax.plot(t, v, color = 'red', linestyle='--', marker = 'o')
+ax.plot(t, i, ':dm')
+plt.axis([0, 0.0166,  -170, 170])
+plt.xlabel("Tiempo [s]")
+plt.ylabel("Voltaje [v]")
+plt.title("Voltaje y Corriente")
+plt.show()
